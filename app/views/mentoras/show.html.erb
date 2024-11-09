@@ -1,0 +1,12 @@
+<h1><%= @mentora.nome %></h1>
+
+<ul>
+    <li>
+        <p>Email: <%= @mentora.email %></p>
+        <p>Telefone: <%= @mentora.telefone %></p>
+        <p>Habilidades: <%= @mentora.habilidades %></p>
+    </li>
+</ul>
+
+<%= link_to "Editar", edit_mentora_path(@mentora), class: "btn btn-primary" %>
+<%= link_to "Excluir", mentora_path(@mentora), method: :delete, data: { confirm: "Tem certeza que deseja excluir esta mentora?" }, class: "btn btn-primary" %>

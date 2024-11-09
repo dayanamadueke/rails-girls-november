@@ -1,0 +1,12 @@
+<h1>Mentoras</h1>
+
+<ul>
+    <% @mentoras.each do |mentora| %> 
+        <li>
+            <p> Nome:<%= mentora.nome %> </p>
+            <p> Email:<%= mentora.email %> </p>
+            <p> Telefone:<%= mentora.telefone %> </p>
+            <p> Habilidades:<%= mentora.habilidades %> </p>
+        </li>
+    <% end %>
+</ul>

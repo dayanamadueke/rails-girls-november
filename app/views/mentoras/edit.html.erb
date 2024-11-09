@@ -1,0 +1,27 @@
+<h1>Editar Mentora</h1>
+<%= form_with(model: @mentora, local: true) do |form| %> 
+    <div> 
+        <%= form.label :nome %>
+        <%= form.text_field :nome %>
+   </div>     
+
+   <div> 
+        <%= form.label :email %>
+        <%= form.email_field :email %>
+   </div> 
+
+   <div> 
+        <%= form.label :telefone %>
+        <%= form.text_field :telefone %>
+   </div>   
+
+   <div> 
+        <%= form.label :habilidades %>
+        <%= form.text_field :habilidades %>
+   </div>  
+
+   <div>  
+        <%= form.submit "Atualizar mentora" %>
+        <%= link_to "Voltar", @mentora, class: "btn btn-primary" %>
+   </div>
+<% end %>
